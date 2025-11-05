@@ -1,0 +1,61 @@
+Mettre une X devant la ou les bonnes réponses
+
+Question 1
+A quoi sert un gestionnaire de versions ?
+Attention, plusieurs réponses sont possibles.
+ Conserver un historique
+ Revenir en arrière en cas de problème
+ Travailler à plusieurs
+ Suivre les modifications de chaque fichier
+ Mettre en ligne un site web
+
+Question 2
+Quelle est la différence entre Git et GitHub ?
+ GitHub est un logiciel qui s’installe sur votre ordinateur tandis que Git est un site en ligne pour stocker votre code
+ Git est un gestionnaire de versions tandis que GitHub est un service en ligne qui héberge les dépôts Git
+ Il n’y a pas de différence entre Git et GitHub. Ils permettent tous les deux de gérer votre code
+
+Question 3
+Qu’est-ce qu’un dépôt local ?
+ L’endroit où l’on stocke, sur sa machine, une copie d’un projet
+ Un fichier de configuration sur Git
+ Un code source déposé sur GitHub
+ Le nom donné aux data centers de l’entreprise Git
+
+Question 4
+Un dépôt distant GitHub permet de :
+Attention, plusieurs réponses sont possibles.
+ Stocker du code sur votre ordinateur
+ Travailler en équipe
+ Contribuer à des projets open source
+
+Question 5
+Pour démarrer un projet GitHub, vous devez :
+Attention, plusieurs réponses sont possibles.
+ Créer votre compte GitHub
+ Installer GitHub sur votre ordinateur
+ Créer un repository 
+ Payer un abonnement mensuel
+Question 6
+Pour installer Git, vous devez :
+ Acheter une licence
+ Créer un compte Git
+ Télécharger et configurer Git 
+ Avoir un compte GitHub
+
+Question 7
+Quelle commande permet d'initialiser son projet dans Git Bash ?
+ git init
+ git start
+ git in
+ git initial
+
+
+Question 8
+Quelles sont les trois zones locales majeures dans Git ?
+Attention, plusieurs réponses sont possibles.
+ Working directory
+ Cloud
+ Repository
+ Index
+

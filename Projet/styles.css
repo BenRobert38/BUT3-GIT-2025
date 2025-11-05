@@ -1,0 +1,17 @@
+h1 {
+   color: red;
+}
+h2 {
+   color: green;
+}
+h3 {
+   color: blue;
+   margin: 5px;
+}
+h4 {
+   margin-left: 15px;
+}
+.identifiant {
+   display: flex;   
+   align-items: center;
+}
