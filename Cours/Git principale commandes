@@ -1,0 +1,33 @@
+Git principale commandes
+
+//Configuration
+git config user.name "Nom Prénom" 
+git config user.email nomprenom@monadresse.com
+git config –-global core.editor vim
+git config –-global merge.tool vimdiff
+
+//Navigation
+cd Documents  //vers "Documents"
+cd .. //vers racine
+
+//Création de dossier "PremierProjet"
+mkdir PremierProjet
+
+//Initialisation locale
+git init
+
+//Clonage repo distant
+git clone url
+git pull 
+
+//Création d'un fichier "index.html"
+touch index.html
+
+//Vérification statut
+git status
+
+//Indexation et commit
+git add index.html
+git add . //Tous les fichiers
+
+git commit -m "Ajout du fichier index.html"
