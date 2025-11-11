@@ -32,7 +32,7 @@ Bienvenue dans ce projet d'examen Git. L'objectif est de construire ensemble une
 
 ## 🛠️ Consignes générales
 
-1. **Forkez** ce dépôt ou clonez-le si vous travaillez en local.
+1. **clonez** ce dépôt.
 2. **Choisissez une issue** parmi celles proposées.
 3. **Créez une branche** nommée `feature/<votre-prenom>` ou selon l’issue choisie.
 4. **Ajoutez votre contribution** dans les fichiers `index.html` et/ou `style.css`.
