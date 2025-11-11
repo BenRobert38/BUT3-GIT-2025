@@ -1,17 +1,37 @@
-h1 {
-   color: red;
+/* Palette de couleurs de base */
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --background-color: #ecf0f1;
+  --text-color: #333;
 }
-h2 {
-   color: green;
+
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
-h3 {
-   color: blue;
-   margin: 5px;
+
+/* En-tête */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
-h4 {
-   margin-left: 15px;
+
+/* Sections */
+main {
+  padding: 2em;
 }
-.identifiant {
-   display: flex;   
-   align-items: center;
+
+/* Pied de page */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
