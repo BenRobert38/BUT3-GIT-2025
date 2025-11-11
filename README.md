@@ -32,12 +32,12 @@ Bienvenue dans ce projet d'examen Git. L'objectif est de construire ensemble une
 
 ## 🛠️ Consignes générales
 
-1. **clonez** ce dépôt.
+1. **Clonez** ce dépôt (normalement déjà fait) et repartez de la branche `develop`.
 2. **Choisissez une issue** parmi celles proposées.
 3. **Créez une branche** nommée `feature/<votre-prenom>` ou selon l’issue choisie.
 4. **Ajoutez votre contribution** dans les fichiers `index.html` et/ou `style.css`.
 5. **Commitez** avec un message clair et descriptif.
-6. **Ouvrez une pull request** vers la branche principale (`main`).
+6. **Ouvrez une pull request** vers la branche `develop`.
 7. **Commentez ou répondez** à une autre PR (revue de code).
 
 ## 📋 Règles
@@ -50,9 +50,5 @@ Bienvenue dans ce projet d'examen Git. L'objectif est de construire ensemble une
 ## 🧩 Issues disponibles
 
 Consultez l’onglet "Issues" du dépôt GitHub pour choisir votre tâche.
-
-## 📅 Échéance
-
-Le projet doit être terminé et les PR ouvertes avant **[date à définir]**.
 
 Bon travail à tous !
