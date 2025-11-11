@@ -50,7 +50,7 @@ Si vous ne parvenez pas à utiliser le formulaire HTML :
 - Renommez-le en : `Quiz_nom_prenom.doc` ou `Quiz_nom_prenom.txt`
 - Complétez vos réponses directement dans le fichier
 - Suivez les mêmes étapes pour le commit, le push et la pull request
-- 
+
 ---
 ## 2ème partie - Projet collaboratif Git : Création d'une page web
 
