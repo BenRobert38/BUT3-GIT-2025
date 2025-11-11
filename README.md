@@ -41,7 +41,7 @@ Répondre à un quiz simple pour valider vos acquis avant le projet.
 7. **Pousser votre branche** sur le dépôt distant (GitHub).
 
 8. **Ouvrir une pull request** vers la branche `develop`.
-9. 
+
 ---
 ### 🛟 En cas de problème avec le fichier HTML
 
