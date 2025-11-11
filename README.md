@@ -6,13 +6,13 @@ Bienvenue sur le dépôt du cours BUT3-GIT année 2025-2026
 2. **NE JAMAIS POUSSER SUR MASTER**
 3. Vous trouverez dans le dossier *Cours* les deux présentations
 
-## Examen
-### Consignes
+# Examen
+## Consignes
 
 L'examen est divisé en 2 parties. Une partie *Quiz* et une partie *Projet*. Afin de commencer les deux parties, veuillez **cloner le dépôt BUT3-GIT** sur votre machine. Dans ce dépôt vous pourrez trouver un dossier **Cours**, **Projet** et **Quiz**.  
 Bonne chance !
 
-#### 1ère partie - Quiz Git & GitHub
+## 1ère partie - Quiz Git & GitHub
 
 ### 🎯 Objectif
 Répondre à un quiz simple pour valider vos acquis avant le projet.
@@ -52,7 +52,7 @@ Si vous ne parvenez pas à utiliser le formulaire HTML :
 - Suivez les mêmes étapes pour le commit, le push et la pull request
 - 
 ---
-#### 2ème partie - Projet collaboratif Git : Création d'une page web
+## 2ème partie - Projet collaboratif Git : Création d'une page web
 
 Bienvenue dans ce projet d'examen Git. L'objectif est de construire ensemble une page web simple en HTML/CSS, tout en appliquant les bonnes pratiques de Git et GitHub.
 
