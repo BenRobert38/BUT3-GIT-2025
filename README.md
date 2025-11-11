@@ -6,21 +6,53 @@ Bienvenue sur le dépôt du cours BUT3-GIT année 2025-2026
 2. **NE JAMAIS POUSSER SUR MASTER**
 3. Vous trouverez dans le dossier *Cours* les deux présentations
 
-## Examen
-### Consignes
+# Examen
+## Consignes
 
 L'examen est divisé en 2 parties. Une partie *Quiz* et une partie *Projet*. Afin de commencer les deux parties, veuillez **cloner le dépôt BUT3-GIT** sur votre machine. Dans ce dépôt vous pourrez trouver un dossier **Cours**, **Projet** et **Quiz**.  
 Bonne chance !
 
-#### 1ère partie - Quiz
+## 1ère partie - Quiz Git & GitHub
 
-1. Après avoir réaliser le clonage du dépôt sur votre machine, créer une branche "*nom_prénom_quiz*"
-2. Dans le dossier **Quiz**, renommer le fichier Quiz.doc (si vous avez Word) ou Quiz.txt (sinon) comme suit : "*Quiz_nom_prenom*"
-3. Renseigner votre Nom et Prénom et répondez au quiz.
-4. Une fois terminé, pousser votre branche sur le dépôt distant
-5. Faire une pull request (sur GitHub)
+### 🎯 Objectif
+Répondre à un quiz simple pour valider vos acquis avant le projet.
 
-#### 2ème partie - Projet collaboratif Git : Création d'une page web
+### 📝 Étapes à suivre
+
+1. **Cloner le dépôt** sur votre machine locale.
+
+2. **Créer une branche** nommée :  
+   `nom_prenom_quiz`  
+   *(exemple : `dupont_jean_quiz`)*
+
+3. **Ouvrir le fichier `quiz.html`** dans le dossier `Quiz` :
+   - Remplissez le formulaire directement dans votre navigateur.
+   - Cliquez sur le bouton **"Soumettre et télécharger"** en bas du formulaire.
+   - Un fichier HTML contenant vos réponses sera généré automatiquement.
+
+4. **Renommer le fichier généré** comme suit :  
+   `Quiz_nom_prenom.html`  
+   *(exemple : `Quiz_Jean_Dupont.html`)*
+
+5. **Copier ce fichier dans le dossier `Quiz/`** de votre dépôt local.
+
+6. **Commiter vos modifications** dans votre branche.
+
+7. **Pousser votre branche** sur le dépôt distant (GitHub).
+
+8. **Ouvrir une pull request** vers la branche `develop`.
+
+---
+### 🛟 En cas de problème avec le fichier HTML
+
+Si vous ne parvenez pas à utiliser le formulaire HTML :
+- Ouvrez le fichier `Quiz.doc` (si vous avez Word) ou `Quiz.txt` (sinon)
+- Renommez-le en : `Quiz_nom_prenom.doc` ou `Quiz_nom_prenom.txt`
+- Complétez vos réponses directement dans le fichier
+- Suivez les mêmes étapes pour le commit, le push et la pull request
+
+---
+## 2ème partie - Projet collaboratif Git : Création d'une page web
 
 Bienvenue dans ce projet d'examen Git. L'objectif est de construire ensemble une page web simple en HTML/CSS, tout en appliquant les bonnes pratiques de Git et GitHub.
 
@@ -32,12 +64,12 @@ Bienvenue dans ce projet d'examen Git. L'objectif est de construire ensemble une
 
 ## 🛠️ Consignes générales
 
-1. **Forkez** ce dépôt ou clonez-le si vous travaillez en local.
+1. **Clonez** ce dépôt (normalement déjà fait) et repartez de la branche `develop`.
 2. **Choisissez une issue** parmi celles proposées.
 3. **Créez une branche** nommée `feature/<votre-prenom>` ou selon l’issue choisie.
 4. **Ajoutez votre contribution** dans les fichiers `index.html` et/ou `style.css`.
 5. **Commitez** avec un message clair et descriptif.
-6. **Ouvrez une pull request** vers la branche principale (`main`).
+6. **Ouvrez une pull request** vers la branche `develop`.
 7. **Commentez ou répondez** à une autre PR (revue de code).
 
 ## 📋 Règles
@@ -50,9 +82,5 @@ Bienvenue dans ce projet d'examen Git. L'objectif est de construire ensemble une
 ## 🧩 Issues disponibles
 
 Consultez l’onglet "Issues" du dépôt GitHub pour choisir votre tâche.
-
-## 📅 Échéance
-
-Le projet doit être terminé et les PR ouvertes avant **[date à définir]**.
 
 Bon travail à tous !

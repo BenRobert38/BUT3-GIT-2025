@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Git & GitHub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    fieldset {
+      margin-bottom: 2em;
+      border: 1px solid #ccc;
+      padding: 1em;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 0.5em 0;
+    }
+    input[type="text"] {
+      margin-bottom: 1em;
+      padding: 0.3em;
+      width: 300px;
+    }
+    button {
+      padding: 0.5em 1em;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Quiz Git & GitHub</h1>
+
+  <label for="nom"><strong>Nom :</strong></label>
+  <input type="text" id="nom" name="nom" />
+
+  <label for="prenom"><strong>Prénom :</strong></label>
+  <input type="text" id="prenom" name="prenom" />
+
+  <form id="quizForm">
+
+    <!-- Questions (same structure as before) -->
+    <fieldset>
+      <legend>Question 1 : À quoi sert un gestionnaire de versions ?</legend>
+      <label><input type="checkbox" name="q1" value="Conserver un historique" /> Conserver un historique</label>
+      <label><input type="checkbox" name="q1" value="Revenir en arrière" /> Revenir en arrière en cas de problème</label>
+      <label><input type="checkbox" name="q1" value="Travailler à plusieurs" /> Travailler à plusieurs</label>
+      <label><input type="checkbox" name="q1" value="Suivre les modifications" /> Suivre les modifications de chaque fichier</label>
+      <label><input type="checkbox" name="q1" value="Mettre en ligne" /> Mettre en ligne un site web</label>
+    </fieldset>
+
+<fieldset>
+      <legend>Question 2 : Quelle est la différence entre Git et GitHub ?</legend>
+      <label><input type="radio" name="q2"> GitHub est un logiciel qui s’installe sur votre ordinateur tandis que Git est un site en ligne pour stocker votre code</label>
+      <label><input type="radio" name="q2"> Git est un gestionnaire de versions tandis que GitHub est un service en ligne qui héberge les dépôts Git</label>
+      <label><input type="radio" name="q2"> Il n’y a pas de différence entre Git et GitHub. Ils permettent tous les deux de gérer votre code</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Question 3 : Qu’est-ce qu’un dépôt local ?</legend>
+      <label><input type="radio" name="q3"> L’endroit où l’on stocke, sur sa machine, une copie d’un projet</label>
+      <label><input type="radio" name="q3"> Un fichier de configuration sur Git</label>
+      <label><input type="radio" name="q3"> Un code source déposé sur GitHub</label>
+      <label><input type="radio" name="q3"> Le nom donné aux data centers de l’entreprise Git</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Question 4 : Un dépôt distant GitHub permet de :</legend>
+      <label><input type="checkbox" name="q4"> Stocker du code sur votre ordinateur</label>
+      <label><input type="checkbox" name="q4"> Travailler en équipe</label>
+      <label><input type="checkbox" name="q4"> Contribuer à des projets open source</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Question 5 : Pour démarrer un projet GitHub, vous devez :</legend>
+      <label><input type="checkbox" name="q5"> Créer votre compte GitHub</label>
+      <label><input type="checkbox" name="q5"> Installer GitHub sur votre ordinateur</label>
+      <label><input type="checkbox" name="q5"> Créer un repository</label>
+      <label><input type="checkbox" name="q5"> Payer un abonnement mensuel</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Question 6 : Pour installer Git, vous devez :</legend>
+      <label><input type="radio" name="q6"> Acheter une licence</label>
+      <label><input type="radio" name="q6"> Créer un compte Git</label>
+      <label><input type="radio" name="q6"> Télécharger et configurer Git</label>
+      <label><input type="radio" name="q6"> Avoir un compte GitHub</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Question 7 : Quelle commande permet de récupérer son projet de GitHub en local ?</legend>
+      <label><input type="radio" name="q7"> git init</label>
+      <label><input type="radio" name="q7"> git start</label>
+      <label><input type="radio" name="q7"> git clone</label>
+      <label><input type="radio" name="q7"> git get</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Question 8 : Quelles sont les trois zones locales majeures dans Git ?</legend>
+      <label><input type="checkbox" name="q8" value="Working directory" /> Working directory</label>
+      <label><input type="checkbox" name="q8" value="Cloud" /> Cloud</label>
+      <label><input type="checkbox" name="q8" value="Repository" /> Repository</label>
+      <label><input type="checkbox" name="q8" value="Index" /> Index</label>
+    </fieldset>
+
+    <button type="button" onclick="exportQuiz()">Soumettre et télécharger</button>
+  </form>
+
+<script>
+function exportQuiz() {
+  const nom = document.getElementById("nom").value.trim();
+  const prenom = document.getElementById("prenom").value.trim();
+  if (!nom || !prenom) {
+    alert("Veuillez renseigner votre nom et prénom.");
+    return;
+  }
+
+  const questions = [
+    {
+      id: "q1",
+      title: "Question 1 : À quoi sert un gestionnaire de versions ?",
+      type: "checkbox"
+    },
+    {
+      id: "q2",
+      title: "Question 2 : Quelle est la différence entre Git et GitHub ?",
+      type: "radio"
+    },
+    {
+      id: "q3",
+      title: "Question 3 : Qu’est-ce qu’un dépôt local ?",
+      type: "radio"
+    },
+    {
+      id: "q4",
+      title: "Question 4 : Un dépôt distant GitHub permet de :",
+      type: "checkbox"
+    },
+    {
+      id: "q5",
+      title: "Question 5 : Pour démarrer un projet GitHub, vous devez :",
+      type: "checkbox"
+    },
+    {
+      id: "q6",
+      title: "Question 6 : Pour installer Git, vous devez :",
+      type: "radio"
+    },
+    {
+      id: "q7",
+      title: "Question 7 : Quelle commande permet de récupérer son projet de GitHub en local ?",
+      type: "radio"
+    },
+    {
+      id: "q8",
+      title: "Question 8 : Quelles sont les trois zones locales majeures dans Git ?",
+      type: "checkbox"
+    }
+  ];
+
+  let html = `
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><title>Quiz ${nom} ${prenom}</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 2em; line-height: 1.6; }
+fieldset { margin-bottom: 2em; border: 1px solid #ccc; padding: 1em; }
+legend { font-weight: bold; }
+label { display: block; margin: 0.5em 0; }
+</style>
+</head>
+<body>
+<h1>Quiz Git & GitHub</h1>
+<p><strong>Nom :</strong> ${nom}</p>
+<p><strong>Prénom :</strong> ${prenom}</p>
+`;
+
+  questions.forEach(q => {
+    html += `<fieldset><legend>${q.title}</legend>`;
+    const inputs = document.querySelectorAll(`input[name="${q.id}"]`);
+    inputs.forEach(input => {
+      const checked = input.checked ? "checked" : "";
+      const disabled = "disabled";
+      const label = input.parentElement.textContent.trim();
+      html += `<label><input type="${q.type}" name="${q.id}" value="${input.value}" ${checked} ${disabled} /> ${label}</label>\n`;
+    });
+    html += `</fieldset>\n`;
+  });
+
+  html += "</body></html>";
+
+  const blob = new Blob([html], { type: "text/html" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `Quiz_${nom}_${prenom}.html`;
+  link.click();
+}
+</script>
+
+
+</body>
+</html>
