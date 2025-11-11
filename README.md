@@ -20,17 +20,39 @@ Bonne chance !
 4. Une fois terminé, pousser votre branche sur le dépôt distant
 5. Faire une pull request (sur GitHub)
 
-#### 2ème partie - Projet
+#### 2ème partie - Projet collaboratif Git : Création d'une page web
 
-1. Créer une branche "*nom_prénom_projet*"
-2. Dans le dossier **Projet**, fichier **index.html**, dupliquer la div avec nom et prénom (comme indiqué dans le fichier) NE JAMAIS *SUPPRIMER* DANS LE HTML les **div class="identifiant"**
-3. (Optionnel - ne rapporte aucun point) Le style est un peu pauvre, index.html et styles.css peuvent être enrichis
-4. Une fois terminé, pousser votre branche sur le dépôt distant
-5. (Sur GitHub) Faire une pull request sur une des branches *develop_X* (Demander au prof laquelle)
-6. Attendez que quelqu'un vous assigne une pull request et accepter là ou corriger les conflits si nécessaire (bon courage)
-7. A partir de maintenant, vous êtes en binôme
-8. Lorsque votre pull request est acceptée et que vous avez accepté la merge request que l'on vous a assigné, aller sur la branche fusionnée *develop_X* et vérifier que tout est "normal" (vous pouvez vous concerter avec votre collègue de branche)
-9. Si des corrections sont à apportées, corriger à deux sur la branche *develop_X* et pousser les modifications, sinon passer à l'étape suivante
-10. (Sur GitHub) Faire une pull request sur *develop*
-11. Attendez que quelqu'un vous assigne une pull request et accepter là ou corriger les conflits si nécessaire (encore bon courage)
-12. Félicitations, vous êtes au bout !
+Bienvenue dans ce projet d'examen Git. L'objectif est de construire ensemble une page web simple en HTML/CSS, tout en appliquant les bonnes pratiques de Git et GitHub.
+
+## 🎯 Objectifs pédagogiques
+
+- Utiliser Git en équipe : branches, commits, pull requests
+- Travailler en parallèle sans conflits
+- Documenter et présenter son travail
+
+## 🛠️ Consignes générales
+
+1. **Forkez** ce dépôt ou clonez-le si vous travaillez en local.
+2. **Choisissez une issue** parmi celles proposées.
+3. **Créez une branche** nommée `feature/<votre-prenom>` ou selon l’issue choisie.
+4. **Ajoutez votre contribution** dans les fichiers `index.html` et/ou `style.css`.
+5. **Commitez** avec un message clair et descriptif.
+6. **Ouvrez une pull request** vers la branche principale (`main`).
+7. **Commentez ou répondez** à une autre PR (revue de code).
+
+## 📋 Règles
+
+- Ne modifiez pas le travail des autres.
+- Travaillez uniquement dans votre branche.
+- Respectez la structure HTML/CSS existante.
+- Votre contribution doit être autonome et ne pas casser la page.
+
+## 🧩 Issues disponibles
+
+Consultez l’onglet "Issues" du dépôt GitHub pour choisir votre tâche.
+
+## 📅 Échéance
+
+Le projet doit être terminé et les PR ouvertes avant **[date à définir]**.
+
+Bon travail à tous !
