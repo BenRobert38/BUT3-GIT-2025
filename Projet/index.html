@@ -4,20 +4,144 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page collaborative Git</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <header>
     <h1>Notre page web collaborative</h1>
     <!-- Menu de navigation à ajouter ici -->
+	<nav>
+	  <ul>
+		<li><a href="#about">À propos</a></li>
+		<li><a href="#galerie">Galerie</a></li>
+		<li><a href="#contact-section">Contact</a></li>
+		<li><a href="#faq">FAQ</a></li>
+		<li><a href="#notre-equipe">Notre equipe</a></li>
+		<li><a href="#temoignages">temoignage</a></li>
+	
+	  </ul>
+	</nav>
   </header>
 
   <main>
     <!-- Section À propos -->
+	<section id="about">
+	<h2>À propos</h2>
+	<p>Ce projet vise à apprendre Git en collaborant sur une page web avec Benjamin Robert.</p>
+	</section>
+
     <!-- Section Galerie -->
-    <!-- Section Témoignages -->
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="grid-galerie">
+       <figure>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Paysage de montagne" />
+        <figcaption>Paysage de montagne</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Forêt verdoyante" />
+        <figcaption>Forêt verdoyante</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d" alt="Ville moderne au coucher du soleil" />
+        <figcaption>Ville moderne</figcaption>
+      </figure>
+
+    <figure>
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Plage et océan" />
+      <figcaption>Plage et océan</figcaption>
+    </figure>
+  </div>
+</section>
+	<!-- Section Notre équipe - Créée par Mohamed Bougrara -->
+	<section id="notre-equipe">
+	  <h2>Notre équipe</h2>
+
+	  <div class="team">
+		<article class="member">
+		  <h3>Benjamin Robert</h3>
+		  <p>Chef d'équipe</p>
+		</article>
+
+		<article class="member">
+		  <h3>Bastien Dauger</h3>
+		</article>
+
+		<article class="member">
+		  <h3>Mohamed Bougrara</h3>
+		  <p>Créateur de la section équipe en html</p>
+		</article>
+
+		<article class="member">
+		  <h3>Julien Pichon</h3>
+		</article>
+
+		<article class="member">
+		  <h3>Loïs Musso</h3>
+		</article>
+
+		<article class="member">
+		  <h3>Clément Mordenti</h3>
+		</article>
+
+		<article class="member">
+		  <h3>Thiméo Jousserand</h3>
+		</article>
+
+		<article class="member">
+		  <h3>Adrien Arthaud</h3>
+		</article>
+
+		<article class="member">
+		  <h3>Mathéo Delettre</h3>
+		</article>
+	  </div>
+	</section>
+	<!-- Fin section équipe - Mohamed Bougrara -->
+
+    <!-- Section Témoignages fait par Loïs Musso-->
+	<section id="temoignages">
+		<h2>Témoignages des collaborateurs</h2>
+		<div class="temoignage">
+		  <p class="citation">"Cette plateforme a totalement changé ma manière de collaborer ! Les outils sont simples et efficaces." </p>
+		  <p class="auteur">– Jean Dupont, Développeur</p>
+		</div>
+		<div class="temoignage">
+		  <p class="citation">"Une expérience géniale, l'interface est intuitive et les résultats sont vraiment au rendez-vous !" </p>
+		  <p class="auteur">– Marie Lefevre, Designer</p>
+		</div>
+		<div class="temoignage">
+		  <p class="citation">"Je recommande vivement à mes collègues, c'est vraiment un outil très performant." </p>
+		  <p class="auteur">– Paul Martin, Chef de projet</p>
+		</div>
+	</section>
+
     <!-- Section Formulaire de contact -->
+	<section id="contact-section">
+	  <h2>Contactez-nous</h2>
+	  <form id="contact-form">
+		<div class="form-group">
+		  <label for="name">Nom :</label>
+		  <input type="text" id="name" name="name" placeholder="Votre nom" required>
+		</div>
+
+		<div class="form-group">
+		  <label for="email">Email :</label>
+		  <input type="email" id="email" name="email" placeholder="Votre email" required>
+		</div>
+
+		<div class="form-group">
+		  <label for="message">Message :</label>
+		  <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+		</div>
+
+		<button type="button" id="contact-submit">Envoyer</button>
+	  </form>
+	</section>
+
+  <script src="script_contact.js"></script>
   </main>
   
   <section id="faq">
@@ -37,11 +161,62 @@
       <summary>Comment créer un dépôt Git local ?</summary>
       <p>Pour créer un dépôt Git local, il suffit de naviguer dans un répertoire et de lancer la commande <code>git init</code>.</p>
     </details>
+   </section>
+   <section id="Citation">
+	
+		<!-- Section Citation du Jour - DAUGER BASTIEN -->
+		<h2>Citation du jour</h2>
+		<div id="randomText"></div>
 
-  </section>
+		<script>
+			// Liste de citations aléatoires
+			const texts = [
+				"Le meilleur moyen de prédire l’avenir, c’est de le créer. – Peter Drucker",
+				"Il a un côté sympathique, seulement on le voit toujours de face. - Francis Blanche",
+				"Je suis adroit de la main gauche et je suis gauche de la main droite. - Raymond Devos",
+				"Il n'y a qu'une chose qui puisse rendre un rêve impossible, c'est la peur d'échouer - Paulo Coelho",
+				"Ceux qui abandonnent ne gagnent jamais, ceux qui gagnent n'abandonnent jamais. - Napoleon Hill",
+				"Ceux qui ne croient pas en l'impossible sont priés de ne pas décourager ceux qui sont en train de le faire. - Anonyme",
+				"Rien n'est impossible, seules les limites de nos esprits définissent certaines choses comme inconcevables - Marc Levy"
+			];
+
+			// Fonction pour récupérer la citation
+			function getRandomText(list) {
+				if (!Array.isArray(list) || list.length === 0) {
+					return "Pas de citation disponible.";
+				}
+				const randomIndex = Math.floor(Math.random() * list.length);
+				return list[randomIndex];
+			}
+
+			// Affichage de la citation
+			document.getElementById("randomText").textContent = getRandomText(texts);
+		</script>
+		<!-- Fin Section Citation du Jour - DAUGER BASTIEN -->
+   </section>
   <footer>
-    <!-- Pied de page à compléter -->
-  </footer>
 
+
+
+    <!-- Pied de page à compléter -->
+    <div class="footer-content" role="contentinfo">
+      <div class="footer-center" style="text-align:center;">
+        <nav aria-label="Pied de page"></nav>
+          <a href="#about">À propos</a> &nbsp;·&nbsp;
+          <a href="#galerie">Galerie</a> &nbsp;·&nbsp;
+          <a href="#temoignages">Témoignages</a> &nbsp;·&nbsp;
+          <a href="#contact-section">Contact</a> &nbsp;·&nbsp;
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+
+      <div class="footer-meta">
+        <p>Contact : <a href="mailto:contact@example.com">contact@example.com</a></p>
+        <p>&copy; 2025 Notre page collaborative. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 </html>
+
