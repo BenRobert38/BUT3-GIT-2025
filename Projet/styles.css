@@ -65,4 +65,61 @@ footer {
   padding: 1em;
 }
 
+/* Section contact */
+#contact-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2em;
+  max-width: 600px;
+  margin: 2em auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
+#contact-section h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+.form-group {
+  margin-bottom: 1.2em;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+#contact-submit {
+  display: block;
+  width: 100%;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.9em;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact-submit:hover {
+  background-color: #217dbb;
+}
