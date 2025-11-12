@@ -141,3 +141,36 @@ a:focus {
 a:active {
   color: #e6e6e6;
 }
+
+/* Galerie d'images */
+.grid-galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.grid-galerie figure {
+  margin: 0;
+  text-align: center;
+}
+
+.grid-galerie img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-galerie img:hover {
+  transform: scale(1.05);
+}
+
+.grid-galerie figcaption {
+  margin-top: 0.5em;
+  font-style: italic;
+  color: #555;
+}
