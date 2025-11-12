@@ -28,6 +28,35 @@ main {
   padding: 2em;
 }
 
+
+/* Section témoignages */
+#temoignages {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.temoignage {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #007BFF;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.temoignage .citation {
+  font-style: italic;
+  color: #555;
+}
+
+.temoignage .auteur {
+  text-align: right;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+
 /* Pied de page */
 footer {
   background-color: var(--primary-color);
@@ -35,3 +64,5 @@ footer {
   text-align: center;
   padding: 1em;
 }
+
+
