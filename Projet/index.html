@@ -75,6 +75,37 @@
   </main>
 
   <footer>
+
+	<!-- Section Citation du Jour - DAUGER BASTIEN -->
+	<h2>Citation du jour</h2>
+    <div id="randomText"></div>
+
+    <script>
+        // Liste de citations aléatoires
+        const texts = [
+            "Le meilleur moyen de prédire l’avenir, c’est de le créer. – Peter Drucker",
+            "Il a un côté sympathique, seulement on le voit toujours de face. - Francis Blanche",
+            "Je suis adroit de la main gauche et je suis gauche de la main droite. - Raymond Devos",
+            "Il n'y a qu'une chose qui puisse rendre un rêve impossible, c'est la peur d'échouer - Paulo Coelho",
+            "Ceux qui abandonnent ne gagnent jamais, ceux qui gagnent n'abandonnent jamais. - Napoleon Hill",
+            "Ceux qui ne croient pas en l'impossible sont priés de ne pas décourager ceux qui sont en train de le faire. - Anonyme",
+            "Rien n'est impossible, seules les limites de nos esprits définissent certaines choses comme inconcevables - Marc Levy"
+        ];
+
+        // Fonction pour récupérer la citation
+        function getRandomText(list) {
+            if (!Array.isArray(list) || list.length === 0) {
+                return "Pas de citation disponible.";
+            }
+            const randomIndex = Math.floor(Math.random() * list.length);
+            return list[randomIndex];
+        }
+
+        // Affichage de la citation
+        document.getElementById("randomText").textContent = getRandomText(texts);
+    </script>
+	<!-- Fin Section Citation du Jour - DAUGER BASTIEN -->
+
     <!-- Pied de page à compléter -->
     <div class="footer-content" role="contentinfo">
       <nav aria-label="Pied de page">
