@@ -28,6 +28,55 @@ main {
   padding: 2em;
 }
 
+/* Section Témoignages */
+.testimonials-section {
+  margin: 2em 0;
+}
+
+.testimonials-section h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: white;
+  border-left: 4px solid var(--accent-color);
+  padding: 1.5em;
+  margin: 0;
+  max-width: 350px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  color: var(--text-color);
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: var(--accent-color);
+  text-align: right;
+  font-size: 0.9em;
+}
+
 /* Pied de page */
 footer {
   background-color: var(--primary-color);
