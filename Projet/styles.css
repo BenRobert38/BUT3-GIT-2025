@@ -123,3 +123,21 @@ footer {
 #contact-submit:hover {
   background-color: #217dbb;
 }
+
+/* Liens: couleur blanche et styles d'interaction */
+a,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #ffffff;
+  text-decoration: underline;
+  outline: none;
+}
+
+a:active {
+  color: #e6e6e6;
+}
